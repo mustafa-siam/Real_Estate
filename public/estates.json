@@ -1,0 +1,127 @@
+[
+  {
+    "id": 1,
+    "estate_title": "Luxury Villa",
+    "segment_name": "Single-family Home",
+    "description": "A stunning luxury villa with modern amenities, featuring spacious rooms, a private pool, and a lush garden. Ideal for families looking for a high-end lifestyle in a prime location.",
+    "details": "Spacious living areas, high-end kitchen, premium security, and private parking.",
+    "price": "1,200,000",
+    "status": "sale",
+    "area": "3500 sqft",
+    "location": "Bashundhara, Dhaka",
+    "facilities": [
+      "Living Room: 2",
+      "Swimming Pool: 1",
+      "Kitchen: 1",
+      "Garden: 1",
+      "Fire Safety: Yes available",
+      "CC Camera: Yes available"
+    ],
+    "image": "https://i.ibb.co/9k1MvQPP/IMG-20250313-WA0077.jpg",
+    "view_property": "#"
+  },
+  {
+    "id": 2,
+    "estate_title": "Modern Townhouse",
+    "segment_name": "Townhouse",
+    "description": "A contemporary townhouse with an open floor plan, modern interiors, and an attached garage. Perfect for urban dwellers who desire a stylish and comfortable home.",
+    "details": "Stylish open layout, rooftop terrace, attached garage, and premium finishes.",
+    "price": "850,000",
+    "status": "sale",
+    "area": "2200 sqft",
+    "location": "Uttara, Dhaka",
+    "facilities": [
+      "Living Room: 1",
+      "Balcony: 1",
+      "Kitchen: 1",
+      "Garage: 1",
+      "Fire Safety: Yes available",
+      "CC Camera: Yes available"
+    ],
+    "image": "https://i.ibb.co/BVGx2Q9p/IMG-20250313-WA0076.jpg",
+    "view_property": "#"
+  },
+  {
+    "id": 3,
+    "estate_title": "City Apartment",
+    "segment_name": "Apartment",
+    "description": "Spacious 3-bedroom apartment with stunning city views, modern amenities, and a private gym. Located in the heart of the city for a convenient lifestyle.",
+    "details": "Smart home integration, soundproof walls, concierge service, and city views.",
+    "price": "2,000/month",
+    "status": "rent",
+    "area": "1800 sqft",
+    "location": "Gulshan, Dhaka",
+    "facilities": [
+      "Living Room: 1",
+      "Balcony: 2",
+      "Kitchen: 1",
+      "Gym: 1",
+      "Fire Safety: Yes available",
+      "CC Camera: Yes available"
+    ],
+    "image": "https://i.ibb.co/tPCnG3MC/IMG-20250313-WA0073.jpg",
+    "view_property": "#"
+  },
+  {
+    "id": 4,
+    "estate_title": "Student Dorm",
+    "segment_name": "Student Housing",
+    "description": "Affordable student dorm with shared facilities, high-speed internet, study rooms, and a common kitchen. Perfect for students looking for budget-friendly accommodation.",
+    "details": "Secure premises, shared kitchen, study lounge, and high-speed internet.",
+    "price": "400/month",
+    "status": "rent",
+    "area": "500 sqft",
+    "location": "Dhanmondi, Dhaka",
+    "facilities": [
+      "Shared Kitchen: 1",
+      "Study Room: 1",
+      "Laundry: 1",
+      "Fire Safety: Yes available",
+      "CC Camera: Yes available"
+    ],
+    "image": "https://i.ibb.co/qMPnzRYX/IMG-20250313-WA0075.jpg",
+    "view_property": "#"
+  },
+  {
+    "id": 5,
+    "estate_title": "Senior Living Condo",
+    "segment_name": "Senior Living Community",
+    "description": "A peaceful condo designed for senior residents, featuring medical assistance, recreational activities, and a serene garden for relaxation.",
+    "details": "On-site healthcare, recreational activities, wellness programs, and a serene garden.",
+    "price": "3,500/month",
+    "status": "rent",
+    "area": "1200 sqft",
+    "location": "Banani, Dhaka",
+    "facilities": [
+      "Living Room: 1",
+      "Medical Assistance: 1",
+      "Garden: 1",
+      "Recreational Room: 1",
+      "Fire Safety: Yes available",
+      "CC Camera: Yes available"
+    ],
+    "image": "https://i.ibb.co/CpGBF9Lx/IMG-20250313-WA0078.jpg",
+    "view_property": "#"
+  },
+  {
+    "id": 6,
+    "estate_title": "Beachfront Villa",
+    "segment_name": "Vacation Rental",
+    "description": "Enjoy breathtaking ocean views from this exquisite vacation rental. Featuring a private beach, infinity pool, and luxurious interiors for a relaxing getaway.",
+    "details": "Private beach, infinity pool, outdoor lounge, and water sports access.",
+    "price": "500/night",
+    "status": "rent",
+    "area": "2000 sqft",
+    "location": "Cox's Bazar",
+    "facilities": [
+      "Living Room: 1",
+      "Swimming Pool: 1",
+      "Balcony: 1",
+      "Beach Access: 1",
+      "Fire Safety: Yes available",
+      "CC Camera: Yes available"
+    ],
+    "image": "https://i.ibb.co.com/KRPwMMX/navana.jpg",
+    "view_property": "#"
+  }
+]
