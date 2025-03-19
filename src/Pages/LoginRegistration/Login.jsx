@@ -3,7 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../footer/Footer";
 import { useContext } from "react";
 import { authcontext } from "../../authprovider/Authprovider";
-
+import { toast,ToastContainer } from "react-toastify";
 const Login = () => {
     const location=useLocation();
     const navigate=useNavigate();
@@ -16,9 +16,11 @@ const Login = () => {
         signIn(email,password)
         .then(result=>{
             navigate(location?.state&&location.state)
+            toast.success('You login successfully')
             console.log(result.user);
         })
         .catch(error=>{
+            toast.error('Incorrect UserName')
             console.error(error)
         })
     }
@@ -42,6 +44,7 @@ const Login = () => {
     </div>
         </div>
         <Footer></Footer>
+        <ToastContainer />
         </>
     );
 };

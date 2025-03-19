@@ -7,9 +7,8 @@ import { IoEye } from "react-icons/io5";
 import { IoEyeOff } from "react-icons/io5";
 import { toast,ToastContainer } from "react-toastify";
 const Registration = () => {
-    const {creatuser,logout}=useContext(authcontext)
+    const {creatuser}=useContext(authcontext)
     const [showpass,setshowpass]=useState(false);
-    const [registererror,setregistererror]=useState(false)
     const navigate=useNavigate();
     const handleregister=(e)=>{
         e.preventDefault();
@@ -20,14 +19,12 @@ const Registration = () => {
         const password=form.get('password');
         const regex=/^(?=.*[A-Z])(?=.*[a-z]).{6,}$/;
         if(!regex.test(password)){
-            setregistererror(true);
             toast.error("Password must have an uppercase, lowercase, and at least 6 characters.");
             return;
         }
         creatuser(email,password)
         .then(result=>{
             console.log(result.user)
-            setregistererror(false)
             toast.success("Registration successful!");
             setTimeout(() =>navigate('/login') , 2000);
         })
