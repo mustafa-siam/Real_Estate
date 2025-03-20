@@ -8,6 +8,8 @@ import Privateroute from "./Privateroute";
 import Errorpage from "../Pages/error page/Errorpage";
 import Userprofile from "../Pages/Userprofile/Userprofile";
 import Editprofile from "../Pages/Userprofile/Editprofile";
+import About from "../Pages/About";
+import Blog from "../Pages/Blog";
 
 const router = createBrowserRouter([
     {
@@ -39,6 +41,14 @@ const router = createBrowserRouter([
     {
         path:'/editprofile',
         element:<Editprofile></Editprofile>
+    },
+    {
+        path:'/about',
+        element:<About></About>
+    },
+    {
+        path:'/blog',
+        element:<Blog></Blog>
     }
 ]
 }
