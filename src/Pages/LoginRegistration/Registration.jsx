@@ -6,6 +6,7 @@ import { authcontext } from "../../authprovider/Authprovider";
 import { IoEye } from "react-icons/io5";
 import { IoEyeOff } from "react-icons/io5";
 import { toast,ToastContainer } from "react-toastify";
+import { updateProfile } from "firebase/auth";
 const Registration = () => {
     const {creatuser}=useContext(authcontext)
     const [showpass,setshowpass]=useState(false);
@@ -17,6 +18,7 @@ const Registration = () => {
         const photourl=form.get('photourl');
         const email=form.get('email');
         const password=form.get('password');
+        console.log(name,photourl,email,password)
         const regex=/^(?=.*[A-Z])(?=.*[a-z]).{6,}$/;
         if(!regex.test(password)){
             toast.error("Password must have an uppercase, lowercase, and at least 6 characters.");
@@ -24,9 +26,13 @@ const Registration = () => {
         }
         creatuser(email,password)
         .then(result=>{
-            console.log(result.user)
+            updateProfile(result.user,{
+                displayName:name,
+                photoURL:photourl,
+            })
             toast.success("Registration successful!");
-            setTimeout(() =>navigate('/login') , 2000);
+            setTimeout(() =>navigate('/') , 2000);
+            e.target.reset();
         })
         .catch(error=>{
             console.error(error)
@@ -42,7 +48,7 @@ const Registration = () => {
       <label className="fieldset-label">Your Name</label>
       <input type="text" name="name" className="input w-full" placeholder="username" />
       <label className="fieldset-label">Your Photo</label>
-      <input type="text" name="photourl" className="input w-full" placeholder="Photo Url" />
+      <input type="url" name="photourl" className="input w-full" placeholder="Photo Url" />
           <label className="fieldset-label">Email</label>
           <input type="email" name="email" className="input w-full" placeholder="Email" />
           <label className="fieldset-label">Password</label>

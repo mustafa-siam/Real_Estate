@@ -1,14 +1,28 @@
 import React, { useContext } from 'react';
 import { authcontext } from '../../authprovider/Authprovider';
+import { Link } from 'react-router-dom';
 
 const Userprofile = () => {
     const {user}=useContext(authcontext)
-    const displayName = user.displayName;
-    console.log(displayName)
+    console.log(user.photoURL)
     return (
-        <div>
-           
-        </div>
+<div className='flex bg-[#f5f5f5] h-screen justify-center items-center w-2/3 w-auto'>
+<div className="card bg-base-100  shadow-sm">
+  <figure className="px-10 pt-10">
+    <img
+      src={user.photoURL}
+      alt="profile pic"
+      className="rounded-xl" />
+  </figure>
+  <div className="card-body items-center text-center">
+    <h2 className="card-title">{user.displayName}</h2>
+    <p>Email: {user.email}</p>
+    <div className="card-actions">
+        <Link to={'/editprofile'}><button className="btn btn-primary">Edit profile</button></Link>    
+    </div>
+  </div>
+</div>
+</div>
     );
 };
 

@@ -15,9 +15,10 @@ const Login = () => {
         const password=form.get('password')
         signIn(email,password)
         .then(result=>{
-            navigate(location?.state&&location.state)
+            navigate(location?.state?location.state:'/')
             toast.success('You login successfully')
             console.log(result.user);
+            e.target.reset();
         })
         .catch(error=>{
             toast.error('Incorrect UserName')
