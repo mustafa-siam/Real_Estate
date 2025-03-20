@@ -3,6 +3,8 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { authcontext } from "../../authprovider/Authprovider";
 import { toast } from "react-toastify";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../footer/Footer";
 
 const Editprofile = () => {
     const {user}=useContext(authcontext)
@@ -20,7 +22,9 @@ const Editprofile = () => {
         setTimeout(() =>navigate('/userprofile'), 2000);
     }
     return (
-        <div className="flex justify-center h-screen items-center bg-[#f5f5f5]">
+        <div>
+            <Navbar></Navbar>
+            <div className="flex justify-center h-screen items-center bg-[#f5f5f5]">
                   <form onSubmit={handleupdateProfile} className="md:w-3/4 lg:w-1/2 w-3/4 mx-auto  shadow-2xl p-6">
       <fieldset className="fieldset">
       <label className="fieldset-label">Your Name</label>
@@ -30,7 +34,8 @@ const Editprofile = () => {
           <button className="btn btn-neutral mt-4">save changes</button>
         </fieldset>
       </form>
-
+        </div>
+            <Footer></Footer>
         </div>
     );
 };
