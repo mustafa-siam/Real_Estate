@@ -1,12 +1,14 @@
-# React + Vite
+# HomeNest - your dream home awaits
+## Live site url
+you can view the live site here:[https://homenest-53e4d.web.app/]
+## Features & Characteristics 
+**Property Listings** – Explore various properties with images, descriptions, and pricing. 
+**service** – people can take service like buy,sell and rent home
+**User Accounts** – Buyers, sellers, and agents can register and manage profiles.
+**estate details** – a dedicated page that people veiw their estate in details.
+**responsive design** – this website adjust mobile screen,tab and desktop screen size.
+## npm Packages Used
+**Leaflet** (`react-leaflet`) – For interactive maps  
+**Swiper slider** (`Swiper slider`) – For responsive image sliders
+**Animate.css** (`animate.css`) – For smooth animations  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
