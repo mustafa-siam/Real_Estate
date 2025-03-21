@@ -38,7 +38,7 @@ const Navbar = () => {
   </div>
   <div className="navbar-end">
     {
-      user? (<div className="navbar-end"><img className=" mr-5 border-2 border-b-gray-950 w-16 rounded-[45%]" src={user.photoURL} alt="" /><button className="btn" onClick={handlelogout}>LogOut</button></div>): (<div className="navbar-end"><img className=" pr-5" src="/src/assets/user.png" alt="" /><Link to={'/login'}><button className="btn">Login</button></Link></div>)
+      user? (<div className="navbar-end"><img className=" mr-5 border-2 border-b-gray-950 md:w-12 w-16 h-12 rounded-[45%]" src={user.photoURL} alt="" /><button className="btn" onClick={handlelogout}>LogOut</button></div>): (<div className="navbar-end"><img className=" pr-5" src="/src/assets/user.png" alt="" /><Link to={'/login'}><button className="btn">Login</button></Link></div>)
     }
   </div>
   </div>
