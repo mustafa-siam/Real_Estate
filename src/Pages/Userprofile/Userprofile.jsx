@@ -3,14 +3,18 @@ import { authcontext } from '../../authprovider/Authprovider';
 import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../footer/Footer';
+import { Helmet } from 'react-helmet-async';
 
 const Userprofile = () => {
     const {user}=useContext(authcontext)
     console.log(user.photoURL)
     return (
       <div>
+        <Helmet>
+          <title>HomeNest | Userprofile</title>
+        </Helmet>
         <Navbar></Navbar>
-        <div className='flex bg-[#f5f5f5] h-screen justify-center items-center w-2/3 w-auto'>
+        <div className='flex h-screen justify-center items-center w-2/3 w-auto'>
 <div className="card bg-base-100  shadow-sm">
   <figure className="px-10 pt-10">
     <img

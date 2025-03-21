@@ -15,6 +15,9 @@ const Navbar = () => {
     {
       user&&<li><NavLink to={'/userprofile'}>User Profile</NavLink></li>
     }
+    {
+      user&&<li><NavLink to={'/editprofile'}>Update Profile</NavLink></li>
+    }
     </>
     return (
 <div className="navbar bg-base-100 shadow-sm">
@@ -25,14 +28,14 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        className="menu font-bold menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
         {navlinks}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl animate__heartBeat">HomeNest</a>
+    <a className="btn btn-ghost text-xl animate__heartBeat"><Link to={'/'}>HomeNest</Link></a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu  menu-horizontal px-1">
       {navlinks}
     </ul>
   </div>

@@ -5,6 +5,7 @@ import { authcontext } from "../../authprovider/Authprovider";
 import { toast } from "react-toastify";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../footer/Footer";
+import { Helmet } from "react-helmet-async";
 
 const Editprofile = () => {
     const {user}=useContext(authcontext)
@@ -23,8 +24,11 @@ const Editprofile = () => {
     }
     return (
         <div>
+            <Helmet>
+                      <title>HomeNest | Updateprofile</title>
+            </Helmet>
             <Navbar></Navbar>
-            <div className="flex justify-center h-screen items-center bg-[#f5f5f5]">
+            <div className="flex justify-center h-screen items-center ">
                   <form onSubmit={handleupdateProfile} className="md:w-3/4 lg:w-1/2 w-3/4 mx-auto  shadow-2xl p-6">
       <fieldset className="fieldset">
       <label className="fieldset-label">Your Name</label>
